@@ -53,3 +53,5 @@
 helpful to shorten frequently used commands
 `git config --global alias.<aliasName> "<Command to be Aliased>"`
 [Read More](https://opensource.com/article/20/11/git-aliases) or Search Google for **git alias list**
+
+
