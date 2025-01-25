@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: rgb(36, 82, 209);
+}
+
 body {
   font-family: system-ui, sans-serif;
   color: #13181a;
@@ -28,7 +32,7 @@ body {
     width: var(--width);
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: rgb(36, 82, 209);
+    background-color: var(--primary);
   }
 }
 
@@ -86,6 +90,39 @@ article .author {
 
   span {
     margin-left: 2px;
+  }
+}
+
+.scroll-top {
+  --width: 40px;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 0;
+
+  transform: translateX(100%);
+  visibility: hidden;
+
+  width: var(--width);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--primary);
+
+  display: grid;
+  place-content: center;
+
+  font-size: .8rem;
+  cursor: pointer;
+  transition: 200ms;
+
+  &:is(:active) {
+    scale: 1.09;
+  }
+
+  &.show {
+    transform: translateX(-0.5rem);
+    visibility: visible;
   }
 }
 
