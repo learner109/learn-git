@@ -83,3 +83,10 @@ Stash is like a box to save file wouthout the need to commit it
 6. To show stash last file `git stash show`
 7. To show stash Specific file `git stash show <stashId>`
 8. To save stash by name `git stash dave <MessageHere>`
+
+# Tags & Releases
+
+1. to create Tag `git tag -a <Version> -m <Commit Message>`
+2. Show tags `git tag --list`
+3. delete tag from local `git tag <Version> --delete`
+4. Delete tag from Remote `git push origin <TagName (Version)> --delete`
