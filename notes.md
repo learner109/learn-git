@@ -82,3 +82,4 @@ Stash is like a box to save file wouthout the need to commit it
 5. To delete all files in stash `git stash clear`
 6. To show stash last file `git stash show`
 7. To show stash Specific file `git stash show <stashId>`
+8. To save stash by name `git stash dave <MessageHere>`
