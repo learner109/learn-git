@@ -64,3 +64,21 @@
 helpful to shorten frequently used commands
 `git config --global alias.<aliasName> "<Command to be Aliased>"`
 [Read More](https://opensource.com/article/20/11/git-aliases) or Search Google for **git alias list**
+
+# Stash
+
+Stash is like a box to save file wouthout the need to commit it
+
+1. To show stash `git stash list`
+2. To create stash `git stash <FileName>`
+3. To get file from stash
+   - `git stash pop` Pop will cut the file from the stash
+   - `git stash apply` apply will cut the file from the stash
+4. To get Specific file from stash
+
+   - `git stash pop <stashId>` Pop will cut the file from the stash
+   - `git stash apply <stashId>` apply will cut the file from the stash
+
+5. To delete all files in stash `git stash clear`
+6. To show stash last file `git stash show`
+7. To show stash Specific file `git stash show <stashId>`
