@@ -18,10 +18,21 @@
 1. For All Files: `git restore --staged .`
 1. `git reset head <filename>`
 
+# Branching
+
 ## How to know all Branches
 
 1. `git branch `
 1. `git remote -v`
+
+## Delete Branch
+
+1. `git branch -d <BranchName>`
+
+   - `-d` for safe remove by checking if merge had happened
+   - `-D` to delete by force without checking of merge had happened
+
+2. Remove branch from Remote `git push origin <BranchName> --delete`
 
 ## How to Push to Remote Repo
 
@@ -53,5 +64,3 @@
 helpful to shorten frequently used commands
 `git config --global alias.<aliasName> "<Command to be Aliased>"`
 [Read More](https://opensource.com/article/20/11/git-aliases) or Search Google for **git alias list**
-
-
